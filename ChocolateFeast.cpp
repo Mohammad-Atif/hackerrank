@@ -28,8 +28,8 @@ void solve(ll n,ll c,ll m)
     w=bars;
     while(w>=m)
     {
-        bars+=(w%m);
-        w=(w%m)+(w-w/m);
+        bars+=(w/m);
+        w=(w%m)+(w/m);
     }
     deb(bars)
 }
